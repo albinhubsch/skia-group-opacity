@@ -10,7 +10,7 @@ export default function App() {
     <View style={styles.container}>
       <Canvas style={{ height: 250, width: 250, borderWidth: 1, borderColor: "red", marginBottom: 40 }}>
         <Group opacity={opacity1}>
-          <Mask mask={<Rect x={0} y={0} width={100} height={100} color="white" />}>
+          <Mask mask={<Rect x={0} y={0} width={100} height={100} color="white" />} mode="luminance">
             <Rect x={0} y={0} width={100} height={100} color="red" />
           </Mask>
         </Group>
